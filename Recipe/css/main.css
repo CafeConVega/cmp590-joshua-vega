@@ -5,6 +5,8 @@
 html {
     background: url('../assets/wood.jpg') no-repeat center center fixed;
     background-size: cover;
+    margin-left: 120px;
+    max-width: 960px;
 }
 
 h1 {
@@ -28,16 +30,24 @@ ul {
 
 ol,
 ul,
-table,
 p {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 35px;
+    padding-right: 35px;
     color: #FFFFFF;
 }
 
-img {
-    padding-top: 50px;
-    padding-bottom: 50px;
+table {
+    padding-left: 35px;
+    padding-right: 35px;
+    color: #FFFFFF;
+    width: 320px;
+    text-align: center;
+   
+}
+
+.plateimg {
+    padding-top: 40px;
+    padding-bottom: 40px;    
 }
 
 body, caption {
