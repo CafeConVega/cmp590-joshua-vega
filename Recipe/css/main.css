@@ -1,0 +1,179 @@
+/*! Building Interfaces HTML5 template */
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+html {
+    background: url('../assets/wood.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Squada One', cursive;
+    font-size: 60px;
+    color: #CC9900;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 46px;
+    color: #CC9900;
+    text-align: center;
+}
+
+ol,
+ul {
+    max-width: 520px;
+}
+
+ol,
+ul,
+table,
+p {
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #FFFFFF;
+}
+
+img {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+body, caption {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+    line-height: 200%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#ingredients_headers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+#ingredients {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#preparation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#instructions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#instr_imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#serving {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* Mobile */
+
+@media only screen and (min-width: 480px) {}
+/* Intermediate */
+
+@media only screen and (min-width: 768px) {}
+/* Wide */
+
+@media only screen and (min-width: 1140px) {}
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    @page {
+        margin: 0.5cm;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
