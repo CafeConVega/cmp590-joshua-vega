@@ -70,44 +70,44 @@ caption {
     flex-direction: column;
 }
 
-#about {
+.about {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-#ingredients_headers {
+.ingredients_headers {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: stretch;
 }
 
-#ingredients {
+.ingredients {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-#preparation {
+.preparation {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-#instructions {
+.instructions {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-#instr_imgs {
+.instr_imgs {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-#serving {
+.serving {
     display: flex;
     flex-direction: row;
     justify-content: center;
