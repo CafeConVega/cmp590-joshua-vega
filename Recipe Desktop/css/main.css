@@ -24,6 +24,12 @@ h2 {
     text-align: center;
 }
 
+ol li {
+margin-bottom: 12px;
+    line-height: normal;
+}    
+
+
 ol,
 ul {
     max-width: 520px;
