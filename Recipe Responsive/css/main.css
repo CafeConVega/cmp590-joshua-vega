@@ -3,16 +3,9 @@
    Custom styles
    ========================================================================== */
 
-html {
-    background: url('../assets/wood.jpg') no-repeat center center fixed;
-    background-size: cover;
-    margin: 0 auto;
-    max-width: 960px;
-}
-
 h1 {
     font-family: 'Squada One', cursive;
-    font-size: 60px;
+    font-size: 2.5em;
     color: #CC9900;
     text-align: center;
     text-shadow: 1px 1px 1px #000;
@@ -20,49 +13,45 @@ h1 {
 
 h2 {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 46px;
+    font-size: 1.92em;
     color: #CC9900;
     text-align: center;
     text-shadow: 1px 1px 1px #000;
 }
 
 ol li {
-margin-bottom: 12px;
+    margin-bottom: .5em;
     line-height: normal;
-}    
-
+}
 
 ol,
 ul {
-    max-width: 520px;
+    max-width: 21.67em;
 }
 
 ol,
 ul,
 p {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 1.4583em;
+    padding-right: 1.4583em;
     color: #FFFFFF;
 }
 
-table {
-    padding-left: 35px;
-    padding-right: 35px;
-    color: #FFFFFF;
-    width: 320px;
+figcaption {
+    color: #B2B2B2;
+    font-size: .75em;
     text-align: center;
 }
 
-.plateimg {
-    padding-top: 40px;
-    padding-bottom: 40px;
+img {
+    max-width: 100%;
+    height: auto;
+    height: auto;
 }
 
-body,
-caption {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 24px;
-    line-height: 200%;
+.plateimg {
+    padding-top: 1.6666em;
+    padding-bottom: 1.6666em;
 }
 
 .flex {
@@ -70,47 +59,10 @@ caption {
     flex-direction: column;
 }
 
-.about {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.ingredients_headers {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: stretch;
-}
-
-.ingredients {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.preparation {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.instructions {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
 .instr_imgs {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-
-.serving {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 /* ==========================================================================
    Helper classes
@@ -134,13 +86,149 @@ caption {
    ========================================================================== */
 /* Mobile */
 
-@media only screen and (min-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    html {
+        background: url('../assets/wood.jpg') no-repeat center center fixed;
+        background-size: cover;
+        margin: 0 auto;
+        max-width: 380px;
+    }
+    body,
+    caption {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 12px;
+        line-height: 200%;
+    }
+    table {
+        padding-left: 1.4583em;
+        padding-right: 1.4583em;
+        color: #FFFFFF;
+        width: 13.3333em;
+        text-align: center;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .ingredients {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .preparation {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+    .instructions {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .serving {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 /* Intermediate */
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    html {
+        background: url('../assets/wood.jpg') no-repeat center center fixed;
+        background-size: cover;
+        margin: 0 auto;
+        max-width: 960px;
+    }
+    body,
+    caption {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 24px;
+        line-height: 200%;
+    }
+    table {
+        padding-left: 1.4583em;
+        padding-right: 1.4583em;
+        color: #FFFFFF;
+        width: 13.3333em;
+        text-align: center;
+    }
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .ingredients {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .preparation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .instructions {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .serving {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
 /* Wide */
 
-@media only screen and (min-width: 1140px) {}
+@media only screen and (min-width: 1140px) {
+    html {
+        background: url('../assets/wood.jpg') no-repeat center center fixed;
+        background-size: cover;
+        margin: 0 auto;
+        max-width: 380px;
+    }
+    body,
+    caption {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 24px;
+        line-height: 200%;
+    }
+    table {
+        padding-left: 1.4583em;
+        padding-right: 1.4583em;
+        color: #FFFFFF;
+        width: 13.3333em;
+        text-align: center;
+    }
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .ingredients {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .preparation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .instructions {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .serving {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
 /* ==========================================================================
    Print styles
    ========================================================================== */
