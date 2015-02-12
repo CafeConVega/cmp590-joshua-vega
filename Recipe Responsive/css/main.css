@@ -10,44 +10,38 @@ html {
     max-width: 960px;
 }
 
-body,
-caption {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 24px;
-    line-height: 200%;
-}
-
 h1 {
     font-family: 'Squada One', cursive;
-    font-size: 2.5em;
+    font-size: 60px;
     color: #CC9900;
     text-align: center;
-    text-shadow:.04em .04em .04em #000;
+    text-shadow: 1px 1px 1px #000;
 }
 
 h2 {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 1.9em;
+    font-size: 46px;
     color: #CC9900;
     text-align: center;
-    text-shadow:.04em .04em .04em #000;
+    text-shadow: 1px 1px 1px #000;
 }
 
 ol li {
-    margin-bottom: .5em;
+margin-bottom: 12px;
     line-height: normal;
-}
+}    
+
 
 ol,
 ul {
-    max-width: 53%;
+    max-width: 520px;
 }
 
 ol,
 ul,
 p {
-    padding-left: 3.6%;
-    padding-right: 3.6%;
+    padding-left: 35px;
+    padding-right: 35px;
     color: #FFFFFF;
 }
 
@@ -64,49 +58,56 @@ table {
     padding-bottom: 40px;
 }
 
+body,
+caption {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+    line-height: 200%;
+}
+
 .flex {
     display: flex;
     flex-direction: column;
 }
 
-#about {
+.about {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-#ingredients_headers {
+.ingredients_headers {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: stretch;
 }
 
-#ingredients {
+.ingredients {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-#preparation {
+.preparation {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-#instructions {
+.instructions {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-#instr_imgs {
+.instr_imgs {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-#serving {
+.serving {
     display: flex;
     flex-direction: row;
     justify-content: center;
