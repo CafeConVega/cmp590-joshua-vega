@@ -86,7 +86,7 @@ img {
    ========================================================================== */
 /* Mobile */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px) {
     html {
         background: url('../assets/wood.jpg') no-repeat center center fixed;
         background-size: cover;
@@ -96,7 +96,7 @@ img {
     body,
     caption {
         font-family: 'Titillium Web', sans-serif;
-        font-size: 12px;
+        font-size: 19px;
         line-height: 200%;
     }
     table {
@@ -109,28 +109,27 @@ img {
     .about {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        align-items: center;
     }
     .ingredients {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-content: center;
+        align-items: center;
     }
     .preparation {
         display: flex;
         flex-direction: column-reverse;
-        justify-content: flex-start;
+        align-items: center;
     }
     .instructions {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        align-items: center;
     }
     .serving {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
 }
 /* Intermediate */
@@ -158,32 +157,36 @@ img {
     .about {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        align-items: center;
     }
     .ingredients {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
     }
     .preparation {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        align-items: center;
     }
     .instructions {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        align-items: center;
     }
     .serving {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
     }
 }
 /* Wide */
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 114000000px) {
     html {
         background: url('../assets/wood.jpg') no-repeat center center fixed;
         background-size: cover;
