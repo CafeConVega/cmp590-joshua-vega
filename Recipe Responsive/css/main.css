@@ -32,8 +32,8 @@ ul {
 ol,
 ul,
 p {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     color: #FFFFFF;
 }
 
@@ -56,11 +56,6 @@ table caption {
 .ingredients {
     padding-left: 2em;
     padding-right: 2em;
-}
-
-.plateimg {
-    padding-top: 1.6666em;
-    padding-bottom: 1.6666em;
 }
 
 .flex {
@@ -121,6 +116,10 @@ table caption {
         justify-content: center;
         align-items: center;
     }
+    
+    .plateimg {
+   margin-top: 1em;
+}
     .ingredients {
         display: flex;
         flex-direction: column;
@@ -147,55 +146,7 @@ table caption {
         justify-content: space-around;
     }
 }
-/* Wide */
 
-@media only screen and (min-width: 1200px) {
-    html {
-        background: url('../assets/wood.jpg') no-repeat center center fixed;
-        background-size: cover;
-        margin: 0 auto;
-        max-width: 380px;
-    }
-    body,
-    caption {
-        font-family: 'Titillium Web', sans-serif;
-        font-size: 24px;
-        line-height: 200%;
-    }
-    table {
-        padding-left: 1.4583em;
-        padding-right: 1.4583em;
-        color: #FFFFFF;
-        width: 13.3333em;
-        text-align: center;
-    }
-    .about {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-    .ingredients {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-    }
-    .preparation {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-    .instructions {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-    .serving {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-}
 /* Intermediate */
 
 @media only screen and (min-width: 668px) {
@@ -223,6 +174,9 @@ table caption {
         flex-direction: row;
         align-items: flex-start;
     }
+            .plateimg {
+   margin-top: 2.3em;
+}
     .ingredients {
         display: flex;
         flex-direction: row;
