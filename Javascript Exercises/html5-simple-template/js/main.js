@@ -1,4 +1,4 @@
-console.log("n1 = " + max(200, 4) + " n2 = " + maxOfThree(10, 2990, 30) + " n3 = " + vowelCheck("y"));
+console.log("n1 = " + max(200, 4) + " n2 = " + maxOfThree(10, 2990, 30) + " n3 = " + vowelCheck("y") + " n4 = " + translate("joshua") + " n5 multiply = " + multiply(1,2,3,4) + " n5 sum = " + sum(1,2,3,4,5));
 
 
 //n1
@@ -38,9 +38,30 @@ function vowelCheck(a) {
 }
 
 //n4
-function translate(a) {
-    var strng = a;
+function translate(abc) {
+    var strng = abc;
     var array = strng.split('');
-    return array.shift();
+    var firstLetter = array.shift();
+    array.push(firstLetter);
+    return array.join("");
     //array shift array push
+}
+
+//n5
+function multiply() {
+    var multiply;
+    var total = 1;
+    for (i = 1; i <= arguments.length-1; i = i+2) {
+        multiply = arguments[i - 1] * arguments[i];
+        total = total * multiply;
+    }
+    return total;
+}
+
+function sum() {
+    var sum = 0;
+    for (i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
 }
