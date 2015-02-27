@@ -53,6 +53,14 @@ table caption {
     color: #CCCC99;
 }
 
+.info {
+ list-style-type: none; 
+}
+
+.equipment :first-child {
+ list-style-type: none; 
+}
+
 .ingredients {
     padding-left: 2em;
     padding-right: 2em;
@@ -156,18 +164,25 @@ table caption {
         margin: 0 auto;
         max-width: 960px;
     }
-    body,
+    body
+    {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 24px;
+        line-height: 200%;
+    }
+    
     caption {
         font-family: 'Titillium Web', sans-serif;
         font-size: 24px;
         line-height: 200%;
+        text-align: left;
     }
     table {
         padding-left: 1.4583em;
         padding-right: 1.4583em;
         color: #FFFFFF;
         width: 13.3333em;
-        text-align: center;
+        text-align: left;
     }
     .about {
         display: flex;
