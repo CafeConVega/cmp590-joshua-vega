@@ -1,4 +1,4 @@
-console.log("n1 = " + max(200, 4) + " n2 = " + maxOfThree(10, 2990, 30) + " n3 = " + vowelCheck("y") + " n4 = " + translate("joshua") + " n5 multiply = " + multiply(1, 2, 3, 4) + " n5 sum = " + sum(1, 2, 3, 4) + " n6 = " + reverse("joshua") + " n7 = " + randMax100() + " n8 = " + findLongestWord("cat", "cats", "catss", "catsssss", "catsssssssssssssssss") + " n9 = " + findLongWords(5, "cat", "cats", "catss", "catsssss", "catsssssssssssssssss", "tttttttttt"));
+console.log("n1 = " + max(200, 4) + " n2 = " + maxOfThree(10, 2990, 30) + " n3 = " + vowelCheck("y") + " n4 = " + translate("joshuavega") + " n5 multiply = " + multiply(1, 2, 3, 4) + " n5 sum = " + sum(1, 2, 3, 4) + " n6 = " + reverse("joshua") + " n7 = " + randMax100() + " n8 = " + findLongestWord("cat", "cats", "catss", "catsssss", "catsssssssssssssssss") + " n9 = " + findLongWords(5, "cat", "cats", "catss", "catsssss", "catsssssssssssssssss", "tttttttttt") + " n10 = " + charFreq("jjrrrvvvvffccccc"));
 
 
 //n1
@@ -94,13 +94,30 @@ function findLongestWord() {
 function findLongWords(i) {
     var array = [];
     for (j = 1; j < arguments.length; j++) {
-            array[j - 1] = arguments[j];
+        array[j - 1] = arguments[j];
     }
-     for (jj = 0; jj < array.length; jj++) {
-      if (array[jj].length <= arguments[0]) {
+    for (jj = 0; jj < array.length; jj++) {
+        if (array[jj].length <= arguments[0]) {
             array.splice(jj, 1);
-          jj--;
+            jj--;
         }
-     } 
+    }
     return array;
+}
+
+//n10
+function charFreq(abc) {
+    var object = {};
+    var strng = abc;
+    var array = strng.split('');
+    for (var i = 0; i < array.length; i++) {
+        if (object[array[i]]) {
+            object[array[i]] ++;
+        } else {
+            object[array[i]] = 1;
+        }
+    }
+    return object;
+    //    return Object.keys(object); //test
+    //    return object.v; //test
 }
