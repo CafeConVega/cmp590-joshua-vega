@@ -13,8 +13,8 @@ $(document).ready(function () {
             content: '<p>St. Francis De Sales Catholic Church<br>600 Lenox Ave <br>Miami Beach, FL 33139</p>'
         }
     });
-    
-      var receptionMap = new GMaps({
+
+    var receptionMap = new GMaps({
         div: '#reception_map',
         lat: 25.762746,
         lng: -80.190484

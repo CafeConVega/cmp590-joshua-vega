@@ -59,7 +59,7 @@ nav a:hover {
 }
 
 #homeid {
-    background: url('../assets/tahoe_branch.jpg') no-repeat center center;
+    background: url('../assets/couple/tahoe_branch.jpg') no-repeat center center;
     background-size: cover;
     padding: 30% 0 0 0;
 }
@@ -83,8 +83,8 @@ nav a:hover {
     text-shadow: 1px 1px 1px #000;
     text-align: center;
 }
-/*Us Page Styles*/
 
+/*Us Page Styles*/
 #usid {
     background: #828282;
 }
@@ -94,11 +94,11 @@ nav a:hover {
     line-height: 1.4em;
     max-width: 44%;
     height: auto;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 16pt;
+    font-size: 14pt;
     text-align: left;
-    margin-left: 60px;
+    margin-left: 55px;
     color: #FFFFFF;
     text-indent: 30px;
 }
@@ -126,6 +126,20 @@ nav a:hover {
 .slide_list li {
     margin-bottom: 1em;
     line-height: 1.4em;
+}
+
+.slide_list li p {
+    margin-top: 0em;
+    line-height: 1.4em;
+    max-width: 44%;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14pt;
+    text-align: left;
+    margin-left: 55px;
+    color: #FFFFFF;
+    text-indent: 30px;
 }
 
 .slide_list li span {
@@ -326,6 +340,18 @@ nav a:hover {
     background-size: 50% 100%;
     background-position: right;
     display: flex;
+}
+
+#ceremony {
+   background: url('../assets/graphics/floral_bottom.png') no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+#reception {
+     background: url('../assets/graphics/floral_bottom.png') no-repeat;
+    background-size: contain;
+    background-position: bottom;
 }
 
 #church_map {
