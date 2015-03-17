@@ -41,16 +41,16 @@ nav a:hover {
 }
 
 .navigation ul {
-    display: flex;
-    list-style-type: none;
     font-family: 'Oswald', sans-serif;
-    font-size: 16pt;
-    vertical-align: inherit;
+    font-size: 1.6em;
     margin: auto;
+    text-align: center;
+    display: flex;
 }
 
 .navigation li {
-    margin: auto;
+    justify-content: center;
+  margin: auto;
 }
 
 .navigation li:nth-child(3) {
@@ -69,9 +69,9 @@ nav a:hover {
     font-size: 60pt;
     color: #FFFFFF;
     position: relative;
-    top: -28%;
     text-shadow: 1px 1px 1px #000;
     text-align: center;
+    margin-bottom: 0em;
 }
 
 #homeid h2 {
@@ -79,10 +79,20 @@ nav a:hover {
     font-size: 20pt;
     color: #FFFFFF;
     position: relative;
-    top: -35%;
     text-shadow: 1px 1px 1px #000;
     text-align: center;
+    line-height: .8em;
 }
+
+#homeid ul {
+    list-style-type: none;
+}
+
+.headers li:nth-child(3) {
+   margin-bottom: 28em;
+}
+
+  
 
 /*Us Page Styles*/
 #usid {
@@ -218,7 +228,6 @@ nav a:hover {
     list-style-type: none;
     margin-left: 1em;
     text-align: center;
-    display: flex;
     justify-content: center;
 }
 
@@ -231,6 +240,7 @@ nav a:hover {
 #weddingdayid li {
     margin-right: 3em;
     color: #333333;
+    display: inline;
 }
 
 #weddingdayid a {
@@ -252,7 +262,6 @@ nav a:hover {
 
 #ourstory {
     display: flex;
-    flex-direction: row;
     background: url('../assets/couple/jv2.jpg') no-repeat;
     background-size: 50% 100%;
     background-position: right;

@@ -28,6 +28,6 @@ $(document).ready(function () {
             content: '<p>Sabadell Financial Center - Lobby<br>1111 Brickell Ave<br>Miami, FL 33131</p>'
         }
     });
-
+$('.navigation').horizontalNav();
 
 });
