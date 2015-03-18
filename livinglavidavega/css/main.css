@@ -55,18 +55,18 @@ nav a:hover {
 
 .navigation li:nth-child(3) {
     font-family: 'Lobster Two', cursive;
-    font-size: 28pt;
+    font-size: 1.55em;
 }
 
 #homeid {
-    background: url('../assets/couple/tahoe_branch.jpg') no-repeat center center;
+    background: url('../assets/couple/sunset_sketch.jpg') no-repeat center center;
     background-size: cover;
     padding: 30% 0 0 0;
 }
 
 #homeid h1 {
     font-family: 'Lobster Two', cursive;
-    font-size: 60pt;
+    font-size: 5em;
     color: #FFFFFF;
     position: relative;
     text-shadow: 1px 1px 1px #000;
@@ -76,7 +76,7 @@ nav a:hover {
 
 #homeid h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 20pt;
+    font-size: 1.8em;
     color: #FFFFFF;
     position: relative;
     text-shadow: 1px 1px 1px #000;
@@ -89,7 +89,7 @@ nav a:hover {
 }
 
 .headers li:nth-child(3) {
-   margin-bottom: 28em;
+   margin-bottom: 30em;
 }
 
   
@@ -101,7 +101,7 @@ nav a:hover {
 
 #usid p {
     margin-top: 0em;
-    line-height: 1.4em;
+    line-height: 1.5em;
     max-width: 44%;
     height: auto;
     font-family: 'Roboto', sans-serif;
@@ -116,7 +116,7 @@ nav a:hover {
 .slide_headers {
     max-width: 50%;
     font-family: 'Lobster Two', cursive;
-    font-size: 30pt;
+    font-size: 2.5em;
     text-align: center;
     color: #333333;
     margin-bottom: .2em;
@@ -126,7 +126,7 @@ nav a:hover {
 
 .slide_list {
     font-family: 'Roboto', sans-serif;
-    font-size: 14pt;
+      font-size: 1.17em;
     color: #FFFFFF;
     list-style-type: none;
     max-width: 44%;
@@ -145,7 +145,7 @@ nav a:hover {
     height: auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 14pt;
+    font-size: 1.17em;
     text-align: left;
     margin-left: 55px;
     color: #FFFFFF;
@@ -154,7 +154,7 @@ nav a:hover {
 
 .slide_list li span {
     font-family: 'Lobster Two', cursive;
-    font-size: 18pt;
+    font-size: 1.3em;
     color: #333333;
 }
 /*Bridesmaids Page Styles*/
@@ -165,7 +165,7 @@ nav a:hover {
 
 #bridesmaidsid .slide_list {
     font-family: 'Roboto', sans-serif;
-    font-size: 14pt;
+    font-size: 1.17em;
     color: #333333;
     list-style-type: none;
     max-width: 44%;
@@ -176,7 +176,7 @@ nav a:hover {
     margin-top: 1em;
     max-width: 50%;
     font-family: 'Lobster Two', cursive;
-    font-size: 30pt;
+    font-size: 2.5em;
     text-align: center;
     color: #EF4036;
     margin-bottom: .2em;
@@ -186,7 +186,7 @@ nav a:hover {
 
 #bridesmaidsid .slide_list li span {
     font-family: 'Lobster Two', cursive;
-    font-size: 18pt;
+    font-size: 1.3em;
     color: #EF4036;
 }
 /*Groomsmen Page Styles*/
@@ -204,12 +204,11 @@ nav a:hover {
 
 #weddingdayid h1 {
     font-family: 'Lobster Two', cursive;
-    font-size: 30pt;
+    font-size: 2.5em;
     text-align: center;
     color: #EF4036;
-    margin-bottom: .2em;
+    margin-bottom: .5em;
     vertical-align: text-top;
-    margin-top: -1em;
 }
 
 #weddingdayid h2 {
@@ -372,6 +371,7 @@ nav a:hover {
     border-style: groove;
     border-width: thick;
     border-color: white;
+    margin-bottom: 6em;
 }
 
 #reception_map {
@@ -383,6 +383,7 @@ nav a:hover {
     border-style: groove;
     border-width: thick;
     border-color: white;
+     margin-bottom: 6em;
 }
 /* ==========================================================================
    Helper classes
