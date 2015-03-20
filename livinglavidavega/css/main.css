@@ -105,7 +105,7 @@ nav a:hover {
 #usid p {
     margin-top: 0em;
     line-height: 1.5em;
-    max-width: 44%;
+    max-width: 43%;
     height: auto;
     font-family: 'Roboto', sans-serif;
      font-size: 1.17em;
@@ -115,7 +115,6 @@ nav a:hover {
     text-indent: 30px;
      max-height: 80%;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 .slide_headers {
@@ -134,11 +133,10 @@ nav a:hover {
     font-size: 1.17em;
     color: #FFFFFF;
     list-style-type: none;
-    max-width: 44%;
+    max-width: 43%;
     margin-left: 1em;
      max-height: 80%;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 .slide_list li {
@@ -150,7 +148,7 @@ nav a:hover {
 .slide_list li p {
     margin-top: 0em;
     line-height: 1.4em;
-    max-width: 44%;
+    max-width: 43%;
     height: auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -178,11 +176,10 @@ nav a:hover {
     font-size: 1.17em;
     color: #333333;
     list-style-type: none;
-    max-width: 44%;
+    max-width: 43%;
     margin-left: 1em;
     max-height: 80%;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 #bridesmaidsid .slide_headers {
@@ -435,7 +432,7 @@ nav a:hover {
 /* Mobile */
 @media only screen and (max-width: 480px) {
 body{
-    font-size: 8px;
+    font-size: 6px;
 }
 }
 
