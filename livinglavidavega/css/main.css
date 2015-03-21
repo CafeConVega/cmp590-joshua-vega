@@ -12,6 +12,11 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Oswald', sans-serif, font-weight: 300;
 font-family: 'Kreon', serif;
 font-family: 'Domine', serif;
+
+font-family: 'Lobster Two', cursive;
+font-family: 'Cambo', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Oswald', sans-serif;
 */
 /* ==========================================================================
    Custom styles
@@ -102,19 +107,23 @@ nav a:hover {
     background: #828282;
 }
 
-#usid p {
+#ourstory p {
     margin-top: 0em;
     line-height: 1.5em;
-    max-width: 43%;
+/*    max-width: 43%;*/
     height: auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cambo', serif;
      font-size: 1.17em;
     text-align: left;
-    margin-left: 55px;
     color: #FFFFFF;
-    text-indent: 30px;
-     max-height: 80%;
-    overflow-y: auto;
+    text-indent: 1.5em;
+}
+
+.scroll {
+    margin-left: 3.4em;
+    max-width: 45.5%;
+    max-height: 80%;
+     overflow-y: auto;
 }
 
 .slide_headers {
@@ -129,7 +138,7 @@ nav a:hover {
 }
 
 .slide_list {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cambo', serif;
     font-size: 1.17em;
     color: #FFFFFF;
     list-style-type: none;
@@ -139,26 +148,19 @@ nav a:hover {
     overflow-y: auto;
 }
 
-.slide_list li {
-    margin-bottom: 1em;
-    line-height: 1.4em;
+.slide_list p {
+    margin-top: 0em;
+    height: auto;
+    text-align: left;
+    color: #FFFFFF;
+    text-indent: 1.5em;
 }
 
-/*
-.slide_list li p {
-    margin-top: 0em;
-    line-height: 1.4em;
-    max-width: 43%;
-    height: auto;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 1.17em;
-    text-align: left;
-    margin-left: 55px;
-    color: #FFFFFF;
-    text-indent: 30px;
+.slide_list li {
+    margin-bottom: 1em;
+    line-height: 1.5em;
 }
-*/
+
 
 .slide_list li span {
     font-family: 'Lobster Two', cursive;
@@ -172,33 +174,27 @@ nav a:hover {
 }
 
 #bridesmaidsid .slide_list {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.17em;
     color: #333333;
-    list-style-type: none;
-    max-width: 43%;
-    margin-left: 1em;
-    max-height: 80%;
     overflow-y: auto;
 }
 
+#bridesmaidsid .slide_list p {
+    color: #333333;
+}
+
 #bridesmaidsid .slide_headers {
-    margin-top: 1em;
-    max-width: 50%;
-    font-family: 'Lobster Two', cursive;
-    font-size: 2.5em;
-    text-align: center;
     color: #EF4036;
-    margin-bottom: .2em;
-    vertical-align: text-top;
-    margin-top: 1.5em;
 }
 
 #bridesmaidsid .slide_list li span {
-    font-family: 'Lobster Two', cursive;
-    font-size: 1.3em;
     color: #EF4036;
 }
+
+#bridesmaidsid li {
+    margin-bottom: 1em;
+     line-height: 1.5em;
+}
+
 /*Groomsmen Page Styles*/
 
 #groomsmenid {
@@ -210,6 +206,7 @@ nav a:hover {
     background: #D4D4D4;
     display: flex;
     display: -webkit-flex;
+    align-items: flex-start;
     margin-top: 1em;
 }
 
@@ -232,7 +229,7 @@ nav a:hover {
 }
 
 #weddingdayid ul {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cambo', serif;
      font-size: 1.17em;
     color: #FFFFFF;
     list-style-type: none;
@@ -273,6 +270,7 @@ nav a:hover {
 #ourstory {
     display: flex;
     display: -webkit-flex;
+    align-items: flex-start;
     background: url('../assets/couple/jv2.jpg') no-repeat;
     background-size: 50% 100%;
     background-position: right;
@@ -284,6 +282,7 @@ nav a:hover {
     background-position: right;
     display: flex;
     display: -webkit-flex;
+    align-items: flex-start;
 }
 
 #vanessa {
@@ -292,6 +291,7 @@ nav a:hover {
     background-position: right;
     display: flex;
     display: -webkit-flex;
+    align-items: flex-start;
 }
 
 #valeria {
@@ -300,6 +300,7 @@ nav a:hover {
     background-position: right;
     display: flex;
     display: -webkit-flex;
+    align-items: flex-start;
 }
 
 #daphne {
@@ -308,6 +309,7 @@ nav a:hover {
     background-position: right;
     display: flex;
     display: -webkit-flex;
+    align-items: flex-start;
 }
 
 #lia {
@@ -316,6 +318,7 @@ nav a:hover {
     background-position: right;
     display: flex;
     display: -webkit-flex;
+    align-items: flex-start;
 }
 
 #vanesita {
@@ -324,6 +327,10 @@ nav a:hover {
     background-position: right;
     display: flex;
     display: -webkit-flex;
+    -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
 }
 
 #carrie {
@@ -332,6 +339,8 @@ nav a:hover {
     background-position: right;
     display: flex;
     display: -webkit-flex;
+    -webkit-flex-direction: column;
+    align-items: flex-start;
 }
 
 #luke {
@@ -340,6 +349,7 @@ nav a:hover {
     background-position: right;
     display: flex;
     display: -webkit-flex;
+    align-items: flex-start;
 }
 
 #jodo {
@@ -348,6 +358,7 @@ nav a:hover {
     background-position: right;
     display: flex;
     display: -webkit-flex;
+    align-items: flex-start;
 }
 
 #joseph {
@@ -356,6 +367,7 @@ nav a:hover {
     background-position: right;
     display: flex;
     display: -webkit-flex;
+    align-items: flex-start;
 }
 
 #gal {
@@ -364,6 +376,7 @@ nav a:hover {
     background-position: right;
     display: flex;
     display: -webkit-flex;
+    align-items: flex-start;
 }
 
 #bfell {
@@ -372,6 +385,7 @@ nav a:hover {
     background-position: right;
     display: flex;
     display: -webkit-flex;
+    align-items: flex-start;
 }
 
 #ceremony {
