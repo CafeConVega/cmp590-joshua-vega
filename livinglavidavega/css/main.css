@@ -498,7 +498,6 @@ nav a:active {
         max-width: 40%;
         margin-left: 1em;
         max-height: 75%;
-        font-size: 2em;
     }
     #church_map {
         width: 50%;
@@ -514,6 +513,18 @@ nav a:active {
 @media only screen and (min-width: 668px) {
     body {
         font-size: 16px;
+    }
+    
+        .slide_list {
+        max-width: 44%;
+        margin-left: 1em;
+        max-height: 75%;
+    }
+    
+       .story {
+        margin-left: 4em;
+        max-width: 44%;
+        max-height: 80%;
     }
 }
 /* Wide */
