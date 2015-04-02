@@ -76,13 +76,6 @@ nav a:active {
     font-size: 1.55em;
 }
 
-#homeid {
-    background: url('../assets/couple/sunset_sketch.jpg') no-repeat center center;
-    background-size: cover;
-    background-size: 100% 100%;
-    padding: 30% 0 0 0;
-}
-
 #homeid h1 {
     font-family: 'Lobster Two', cursive;
     font-size: 5em;
@@ -289,6 +282,13 @@ nav a:active {
 /*Adding background for the slides
 	* --------------------------------------- */
 
+#homeid {
+    background: url('../assets/couple/sunset_sketch.jpg') no-repeat center center;
+    background-size: cover;
+    background-size: 100% 100%;
+    padding: 30% 0 0 0;
+}
+
 #ourstory {
     display: flex;
     display: -webkit-flex;
@@ -466,19 +466,6 @@ nav a:active {
    ========================================================================== */
 /* Mobile */
 
-/*
-@media only screen and (max-width: 414px) {
-    body {
-        background: url('../assets/graphics/portrait.jpg') no-repeat;
-        background-size: 100%, 100%;
-        background-position: center;
-    }
-    .navigation ul {
-        font-size: 0em;
-    }
-}
-*/
-
 @media only screen and (min-width: 415px) {
     .navigation ul {
         font-size: 2.5 em;
@@ -533,6 +520,27 @@ nav a:active {
     body {
         font-size: 22px;
     }
+}
+
+/*Mobile Portrait*/
+@media only screen and (max-width: 414px) {
+    #homeid {
+        background: url('../assets/graphics/portrait.jpg') no-repeat;
+        background-size: 100%, 100%;
+        background-position: center;
+    }
+    .navigation ul {
+        font-size: 0em;
+    }
+    
+    
+#homeid h1 {
+    font-size: 0em;
+}
+
+#homeid h2 {
+    font-size: 0em;
+}
 }
 /* ==========================================================================
    Print styles
