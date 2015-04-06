@@ -524,7 +524,7 @@ nav a:active {
 }
 
 /*Mobile Portrait*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 415px) {
     #homeid {
         background: url('../assets/graphics/portrait.jpg') no-repeat;
         background-size: 100%, 100%;
