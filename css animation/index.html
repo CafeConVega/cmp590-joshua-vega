@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How to Deal with Stress</title>
+    <meta name="description" content="Stress Cycle">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/svg-morpheus.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+    <h1>Stress</h1>
+    <div id="main">
+        <object data="svg/icons.svg" type="image/svg+xml" id="icons"></object>
+    </div>
+    <h2 id="header2">How to Deal with it</h2>
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+    <br>
+    <button id="start_over">Start Over</button>
+    <script>
+        var myIcons = new SVGMorpheus('#icons');
+        var step = 0;
+        var icons = ['stress', 'gym', 'sleep', 'fries', 'pizza', 'beer', 'alcohol', 'ambulance', 'restart'];
+        var js_h2 = ["How to Deal with it", "Work Out", "Get More Sleep", "Make Questionable Food Choices", "F*ck It", "Drink", "Lose Control", "Get Help", "Repeat"];
+        var head2 = document.getElementById("header2");
+
+        //next and previous buttons
+        myIcons.to(icons[0], {
+            duration: 1000
+        });
+        $("#next").click(function () {
+            if (step >= 0 && step < 8) {
+                step++;
+                console.log(step);
+                myIcons.to(icons[step], {
+                    duration: 1000
+                });
+                head2.innerHTML = js_h2[step];
+            }
+
+        });
+        $("#prev").click(function () {
+            if (step > 0) {
+                step--;
+                console.log(step);
+                myIcons.to(icons[step], {
+                    easing: 'quad-out',
+                    rotation: 'counterclock',
+                    duration: 1000
+                });
+                head2.innerHTML = js_h2[step];
+            }
+        });
+        $("#start_over").click(function () {
+            step = 0;
+            console.log(step);
+            myIcons.to(icons[step], {
+                easing: 'elastic-out',
+                rotation: 'counterclock',
+                duration: 3000
+            });
+            head2.innerHTML = js_h2[step];
+        });
+    </script>
+</body>
+
+</html>
