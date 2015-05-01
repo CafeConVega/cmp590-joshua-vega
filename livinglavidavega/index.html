@@ -123,6 +123,13 @@
 </head>
 
 <body>
+   
+<!--   For IE Styles-->
+   <script>
+          var doc = document.documentElement;
+doc.setAttribute('data-useragent', navigator.userAgent);
+        </script>
+   
     <!-- Piwik -->
     <script type="text/javascript">
         var _paq = _paq || [];

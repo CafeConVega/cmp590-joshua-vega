@@ -56,6 +56,7 @@ nav a:active {
 }
 
 .navigation ul {
+    list-style-type: none;
     font-family: 'Oswald', sans-serif;
     font-size: 1.6em;
     margin: auto;
@@ -64,6 +65,7 @@ nav a:active {
     -webkit-flex-direction: row;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .navigation li {
@@ -502,14 +504,12 @@ nav a:active {
     body {
         font-size: 16px;
     }
-    
-        .slide_list {
+    .slide_list {
         max-width: 44%;
         margin-left: 1em;
         max-height: 75%;
     }
-    
-       .story {
+    .story {
         margin-left: 4em;
         max-width: 44%;
         max-height: 80%;
@@ -522,8 +522,8 @@ nav a:active {
         font-size: 22px;
     }
 }
-
 /*Mobile Portrait*/
+
 @media only screen and (max-width: 415px) {
     #homeid {
         background: url('../assets/graphics/portrait.jpg') no-repeat;
@@ -533,16 +533,23 @@ nav a:active {
     .navigation ul {
         font-size: 0em;
     }
-    
-    
-#homeid h1 {
-    font-size: 0em;
+    #homeid h1 {
+        font-size: 0em;
+    }
+    #homeid h2 {
+        font-size: 0em;
+    }
 }
+/* IE */
 
-#homeid h2 {
-    font-size: 0em;
-}
-}
+      html[data-useragent*='MSIE 10.0'] .slide_list {
+        max-height: 30%;
+    }
+
+  html[data-useragent*='MSIE 11.0'] .slide_list {
+        max-height: 30%;
+    }
+   
 /* ==========================================================================
    Print styles
    ========================================================================== */
