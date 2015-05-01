@@ -2097,8 +2097,13 @@ you can add resource intensive styles.
   NAVIGATION STYLES
   *********************/
   .nav {
-    border: 0;
+    position: fixed;
+    top: 1%;
+    z-index: 9;
+    width: 100%;
+    align-items: flex-end;
     box-shadow: 0px 0.2em 1em #3D4A4F;
+    background: #fff;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
