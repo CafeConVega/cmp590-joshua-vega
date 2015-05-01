@@ -1,3 +1,7 @@
+.fa-bars-top {
+    visibility: hidden; }
+
+
 /******************************************************************
 Site Name:
 Author:
@@ -40,10 +44,10 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-
+.top-nav {display: block;}
 .nav {
     position: fixed;
-    top: 1%;
+    top: 3vh;
     z-index: 9;
     width: 100%;
     align-items: flex-end;

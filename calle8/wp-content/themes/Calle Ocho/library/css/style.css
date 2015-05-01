@@ -43,7 +43,7 @@ No one likes a mess.
   vertical-align: bottom;
   opacity: 1;
   /*This is where you set the border you want for the image*/
-  border: 3px solid #FFF; }
+  border: 4px solid #999; }
 
 /* In this example, this is the main item being resized */
 .Image_Wrapper {
@@ -1607,34 +1607,54 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
+.fa-bars-top {
+  margin: 10px 15px 0 15px;
+  font-size: 1em;
+  color: #323944;
+  float: right; }
+
+.fa-bars-top {
+  visibility: visible; }
+
+.top-nav {
+  border-top: 1px solid #eaedf2 !important; }
+
+p.caption {
+  margin: 0; }
+
 .nav {
   border-bottom: 0;
   margin: 0;
+  background-color: #fff;
+  display: none;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
-  .nav li {
-    /*
-    so you really have to rethink your dropdowns for mobile.
-    you don't want to have it expand too much because the
-    screen is so small. How you manage your menu should
-    depend on the project. Here's some great info on it:
-    http://www.alistapart.com/articles/organizing-mobile/
-    */ }
-    .nav li a {
-      display: block;
-      color: #3D4A4F;
-      text-decoration: none;
-      padding: 0.75em;
-      /*
-      remember this is for mobile ONLY, so there's no need
-      to even declare hover styles here, you can do it in
-      the style.scss file where it's relevant. We want to
-      keep this file as small as possible!
-      */ }
-    .nav li ul.sub-menu li a,
-    .nav li ul.children li a {
-      padding-left: 30px; }
+
+.nav li {
+  /*
+  so you really have to rethink your dropdowns for mobile.
+  you don't want to have it expand too much because the
+  screen is so small. How you manage your menu should
+  depend on the project. Here's some great info on it:
+  http://www.alistapart.com/articles/organizing-mobile/
+  */ }
+
+.nav li a {
+  display: block;
+  color: #999999;
+  text-decoration: none;
+  padding: 23px 0.75em 10px 0.75em;
+  /*
+  remember this is for mobile ONLY, so there's no need
+  to even declare hover styles here, you can do it in
+  the style.scss file where it's relevant. We want to
+  keep this file as small as possible!
+  */ }
+
+.nav li ul.sub-menu li a,
+.nav li ul.children li a {
+  padding-left: 30px; }
 
 /* end .nav */
 /*********************
@@ -2068,6 +2088,9 @@ in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 768px) {
+  .fa-bars-top {
+    visibility: hidden; }
+
   /******************************************************************
   Site Name:
   Author:
@@ -2096,9 +2119,12 @@ you can add resource intensive styles.
   /*********************
   NAVIGATION STYLES
   *********************/
+  .top-nav {
+    display: block; }
+
   .nav {
     position: fixed;
-    top: 1%;
+    top: 3vh;
     z-index: 9;
     width: 100%;
     align-items: flex-end;

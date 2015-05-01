@@ -507,7 +507,7 @@ nav a:active {
     .slide_list {
         max-width: 44%;
         margin-left: 1em;
-        max-height: 75%;
+        max-height: 75vh;
     }
     .story {
         margin-left: 4em;

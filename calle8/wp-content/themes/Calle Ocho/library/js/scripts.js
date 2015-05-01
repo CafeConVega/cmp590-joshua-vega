@@ -117,6 +117,7 @@ jQuery(document).ready(function($) {
    * You can remove this if you don't need it
   */
   loadGravatars();
+
     
     /*!
  *
@@ -708,4 +709,10 @@ jQuery(document).ready(function($) {
         resizeTimer = setTimeout(collage, 200);
     });
 
-   
+   //open close menu
+jQuery(document).ready(function() {
+    jQuery('.fa-bars-top').click(function() {
+        console.log("hamburger");
+        jQuery('.top-nav').slideToggle("fast");
+   });
+});

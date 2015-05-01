@@ -15,20 +15,25 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-<script>
-$(document).ready(function(){
-    $("nav").mouseover(function(){
-        $("nav").css("visibility", "visible");
-    });
-    $("nav").mouseleave(function(){
-        $("nav").css("visibility", "hidden");
-    });
-});
-</script>
 
 <nav id="navigation">
     <?php get_header(); ?>
 </nav>
+
+<script>
+$(document).ready(function(){
+//    document.getElementById("navigation").style.visibility = "hidden";
+    
+    $("nav").mouseover(function(){
+//        $("nav").css("visibility", "visible");
+        document.getElementById("navigation").style.visibility = "visible";
+    });
+    $("nav").mouseleave(function(){
+//        $("#navid").css("visibility", "hidden");
+        document.getElementById("navigation").style.visibility = "hidden";
+    });
+});
+</script>
 
 
 
