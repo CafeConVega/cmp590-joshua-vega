@@ -26,11 +26,6 @@
 
             <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-                <header class="article-header">
-
-                    <h1 class="page-title"><?php the_title(); ?></h1>
-
-                </header>
 
             
                 <section class="entry-content cf" itemprop="articleBody">
@@ -155,7 +150,7 @@
             <a><img src="http://calle8.com:8888/wp-content/uploads/2015/04/collage_20.jpg" width="275px" height="400px" alt="carmen_barbara_order"/>
             </a>
         </div>
-<div class="Image_Wrapper effect-duration-5" data-caption="The always entertaining, Pablo">
+<div class="Image_Wrapper effect-duration-5" data-caption="The Entertainer">
             <a><img src="http://calle8.com:8888/wp-content/uploads/2015/04/collage_21.jpg" width="773px" height="400px" alt="pablo_storytelling"/>
             </a>
         </div>

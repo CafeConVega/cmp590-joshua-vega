@@ -249,5 +249,9 @@ them however you see fit.
     @include grid-col;
     width: 8.33%;
   }
+    .full-page {
+    height: 100vh;
+    width: 100vw;
+  } 
 
 } // end desktop styles

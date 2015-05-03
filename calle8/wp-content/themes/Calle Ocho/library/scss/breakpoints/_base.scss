@@ -25,6 +25,31 @@ body {
   	-moz-osx-font-smoothing: grayscale;
 }
 
+.embedded_video {
+    padding-top: 1%;
+    width: 100vw;
+    height: 85vh;
+}
+
+.bgvideo {
+position:fixed;
+left:0;
+top:0;
+min-width:100%;
+min-height:100%;
+width:auto;
+height:auto;
+z-index:-100;
+visibility: visible;
+ }
+
+.bgvid-footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -860,7 +885,45 @@ FOOTER STYLES
 
 		}
 
-	} /* end .footer-links */
+	}
+.hc_footer {
+    
+    li {
+     margin: auto;   
+    }
+    
+    a, a:visited {
+	color: $white;
+    text-decoration: none;
+
+	/* on hover */
+	&:hover, &:focus {
+		color: $link-hover;
+	}
+
+	/* on click */
+	&:active {
+
+	}
+
+	/* mobile tap color */
+	&:link {
+		/*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
+		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+	}
+}
+
+		ul {
+           
+			li {}
+
+		}
+
+	}/* end .footer-links */
 
 
 	.copyright {}

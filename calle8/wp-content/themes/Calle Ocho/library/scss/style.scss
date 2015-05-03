@@ -23,9 +23,12 @@ our mixins, functions, and variables that we'll be using across
 the whole project.
 *********************/
 
-// normalize: http://necolas.github.io/normalize.css/
+//Plugin Styles
 @import "partials/collageplus";
 
+@import "partials/hover";
+
+// normalize: http://necolas.github.io/normalize.css/
 @import "partials/normalize";
 
 // Sass variables

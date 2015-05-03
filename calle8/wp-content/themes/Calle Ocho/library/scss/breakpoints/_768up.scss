@@ -290,8 +290,10 @@ mobile. Make sure to double check these!
 */
 .footer-links {
 	ul {
+
 		li {
 			a {
+                color: $white;
 				&:hover {}
 			}
 			/*
@@ -302,5 +304,19 @@ mobile. Make sure to double check these!
 			ul {}
 		}
 	}
-} /* end .footer-links */
+}
+.hc_footer {
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        display: flex;
+        flex-direction: row;
+		ul {
+     
+			&li {
+            margin: auto;
+}
+
+		}
+
+	}/* end .footer-links */
 
