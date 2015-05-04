@@ -763,7 +763,6 @@ jQuery(document).ready(function($) {
 
   $.fn.collageCaption = function( options ) {
   
-  
     // Defaults
     var defaults = {
         // object that contains the images to collage
@@ -903,7 +902,8 @@ jQuery(document).ready(function($) {
                 'fadeSpeed'     : 'fast',
                 'targetHeight'  : 400,
                 'effect'        : 'effect-5',
-                'direction'     : 'vertical'
+                'direction'     : 'vertical',
+                'allowPartialLastRow'   : true
             }
         );
     };

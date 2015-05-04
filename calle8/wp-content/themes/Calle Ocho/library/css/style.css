@@ -43,7 +43,7 @@ No one likes a mess.
   padding: 0;
   display: inline-block;
   vertical-align: bottom;
-  opacity: 1;
+  opacity: 2.5;
   /*This is where you set the border you want for the image*/
   border: 4px solid #999; }
 
@@ -59,9 +59,12 @@ No one likes a mess.
   border-radius: 3px; }
 
 .Caption {
-  font-size: 14px;
+  font-size: .8rem;
   font-weight: normal;
-  font-family: arial; }
+  font-family: arial;
+  overflow-y: auto; }
+  .Caption p {
+    text-indent: 1em; }
 
 .Caption_Content {
   /* padding:10px; */
@@ -5479,11 +5482,11 @@ You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
 .blue-btn, .comment-reply-link, #submit {
-  background-color: #002868; }
+  background-color: #009999; }
   .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
-    background-color: #002054; }
+    background-color: #008585; }
   .blue-btn:active, .comment-reply-link:active, #submit:active {
-    background-color: #001e4e; }
+    background-color: #007f80; }
 
 /******************************************************************
 Site Name:
@@ -5528,7 +5531,7 @@ textarea,
   padding: 0 12px;
   margin-bottom: 14px;
   font-size: 1em;
-  color: #fff;
+  color: #3f3f3f;
   border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
@@ -5797,8 +5800,8 @@ body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #fff;
-  background-color: #3f3f3f;
+  color: #3f3f3f;
+  background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -5922,14 +5925,14 @@ LINK STYLES
 *********************/
 a,
 a:visited {
-  color: #002868;
+  color: #009999;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus,
   a:visited:hover,
   a:visited:focus {
-    color: #fff; }
+    color: #3f3f3f; }
   a:link,
   a:visited:link {
         /*
@@ -5980,8 +5983,7 @@ h1,
   font-size: 2em;
   line-height: 1.333em;
   text-align: center;
-  color: #fff;
-  text-shadow: 0px .3em 1em #222222;
+  color: #009999;
   font-weight: bold; }
 
 h2,
@@ -6015,7 +6017,7 @@ HEADER STYLES
 #logo {
   margin: 0.75em 0; }
   #logo a {
-    color: #002868; }
+    color: #009999; }
 
 .bgvid-container {
   display: block;
@@ -6025,9 +6027,13 @@ HEADER STYLES
   margin-top: 1rem;
   width: 30%;
   height: auto;
-  display: block;
+  display: none;
   margin-left: auto;
   margin-right: auto; }
+
+.castheader {
+  text-align: center;
+  margin-bottom: 0; }
 
 /*********************
 NAVIGATION STYLES
@@ -6042,7 +6048,7 @@ and more scalable.
 .fa-bars-top {
   margin: 10px 15px 10px 15px;
   font-size: 1em;
-  color: #fff;
+  color: #009999;
   float: left; }
 
 .fa-bars-top {
@@ -6054,7 +6060,7 @@ p.caption {
 .nav {
   border-bottom: 0;
   margin: 0;
-  background-color: #3f3f3f;
+  background-color: #fff;
   display: none;
   font-weight: bold;
   font-size: 1.4em;
@@ -6165,7 +6171,7 @@ POSTS & CONTENT STYLES
   .entry-content blockquote {
     margin: 0 0 1.5em 0.75em;
     padding: 0 0 0 0.75em;
-    border-left: 3px solid #002868;
+    border-left: 3px solid #009999;
     font-style: italic;
     color: #9fa6b4; }
   .entry-content dd {
@@ -6248,18 +6254,18 @@ PAGE NAVI STYLES
     padding: 0.75em;
     min-width: 1em;
     display: block;
-    color: #002868; }
+    color: #009999; }
     .pagination a:hover, .pagination a:focus,
     .pagination span:hover,
     .pagination span:focus {
-      background-color: #002868;
+      background-color: #009999;
       color: #fff; }
   .pagination .current {
     cursor: default;
-    color: #fff; }
+    color: #3f3f3f; }
     .pagination .current:hover, .pagination .current:focus {
       background-color: #fff;
-      color: #fff; }
+      color: #3f3f3f; }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
@@ -6370,7 +6376,7 @@ COMMENT FORM STYLES
   font-style: italic;
   margin: 0; }
   .logged-in-as a {
-    color: #fff; }
+    color: #3f3f3f; }
 
 .comment-form-comment {
   margin: 1.5em 0 0.75em; }
@@ -6418,7 +6424,7 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  background-color: #3D4A4F;
+  background-color: #fff;
   color: #f8f9fa;
   display: flex;
   flex-direction: row; }
@@ -6436,7 +6442,7 @@ FOOTER STYLES
   margin: auto; }
 .hc_footer a,
 .hc_footer a:visited {
-  color: #fff;
+  color: #009999;
   text-decoration: none;
   /* on hover */
   /* on click */
@@ -6444,7 +6450,7 @@ FOOTER STYLES
   .hc_footer a:hover, .hc_footer a:focus,
   .hc_footer a:visited:hover,
   .hc_footer a:visited:focus {
-    color: #fff; }
+    color: #3f3f3f; }
   .hc_footer a:link,
   .hc_footer a:visited:link {
             /*
@@ -6504,7 +6510,7 @@ tweeners.
           has the possibility of being a mobile device.
           */ }
           .menu ul li a:hover, .menu ul li a:focus {
-            color: #fff; }
+            color: #3f3f3f; }
 
   /* end .menu */
   /*********************
@@ -6620,10 +6626,19 @@ you can add resource intensive styles.
     align-items: center;
     padding-top: 5%; }
 
+  .hometitle {
+    font-size: 2em;
+    line-height: 1.333em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px .3em 1em #222222;
+    font-weight: bold; }
+
   .calle8logo {
     margin-top: 4rem;
     width: 20vw;
-    height: auto; }
+    height: auto;
+    display: block; }
 
   /*********************
   NAVIGATION STYLES
@@ -6659,7 +6674,7 @@ you can add resource intensive styles.
         has the possibility of being a mobile device.
         */ }
         .nav li a:hover, .nav li a:focus {
-          color: #fff; }
+          color: #3f3f3f; }
       .nav li ul.sub-menu,
       .nav li ul.children {
         margin-top: 0;
@@ -6696,7 +6711,7 @@ you can add resource intensive styles.
     .nav li.current-menu-item a,
     .nav li.current_page_item a,
     .nav li.current_page_ancestor a {
-      color: #3583ff;
+      color: #009999;
       font-weight: bold; }
 
   /* end .nav */
@@ -6746,7 +6761,7 @@ you can add resource intensive styles.
     the footer.
     */ }
     .footer-links ul li a {
-      color: #fff; }
+      color: #3f3f3f; }
 
   .hc_footer {
     display: -webkit-flex;
