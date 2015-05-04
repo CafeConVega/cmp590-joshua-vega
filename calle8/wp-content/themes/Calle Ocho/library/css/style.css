@@ -32,9 +32,11 @@ contains variables that way our files don't get all messy.
 No one likes a mess.
 
 ******************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Arvo|Coustard|Abril+Fatface|Righteous|Squada+One);
 .Collage {
   /*This is where you set the padding you want between the images*/
-  padding: 10px; }
+  padding: 10px;
+  padding-top: 1em; }
 
 .Collage img {
   margin: 0;
@@ -511,8 +513,8 @@ A library of transitions for revealing the loaded images
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.8s;
-  transition-duration: 0.8s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   -webkit-transition-property: transform;
   transition-property: transform; }
 
@@ -520,8 +522,8 @@ A library of transitions for revealing the loaded images
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transform: rotateX(-360deg);
-  transform: rotateX(-360deg); }
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg); }
 
 .hvr-rotate {
   display: inline-block;
@@ -543,6 +545,27 @@ A library of transitions for revealing the loaded images
   transform-style: preserve-3d;
   -webkit-transform: rotateY(-360deg);
   transform: rotateY(-360deg); }
+
+.hvr-rotate2 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+
+.hvr-rotate2:hover, .hvr-rotate2:focus, .hvr-rotate2:active {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg); }
 
 /* Grow Rotate */
 .hvr-grow-rotate {
@@ -4485,6 +4508,61 @@ A library of transitions for revealing the loaded images
   width: 25px;
   height: 25px; }
 
+.panorama {
+  width: 100vw;
+  height: 87.5vh;
+  padding-top: 1em; }
+
+.pv-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative; }
+
+.pv-inner.pv-animating {
+  -webkit-transition: background-position 500ms ease-out;
+  -moz-transition: background-position 500ms ease-out;
+  -o-transition: background-position 500ms ease-out;
+  transition: background-position 500ms ease-out; }
+
+.pv-inner {
+  display: inline-block;
+  height: 100%;
+  width: auto;
+  cursor: move; }
+
+.pv-vertical .pv-inner {
+  width: 100%; }
+
+.pv-inner .pv-pano {
+  height: 100%;
+  width: auto; }
+
+.pv-vertical .pv-inner .pv-pano {
+  height: auto;
+  width: 100%; }
+
+.pv-container .pv-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2); }
+
+.pv-container .pv-overlay i.pvicon-overlay {
+  margin-top: -43px;
+  top: 50%;
+  margin-left: -40px;
+  position: absolute;
+  left: 50%;
+  width: 80px;
+  height: 87px;
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABXCAYAAACTFMIVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2RDhBRjE4Mzg2NDMxMUUzOEI3OTg1NzVCMjUzMzE0QSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2RDhBRjE4NDg2NDMxMUUzOEI3OTg1NzVCMjUzMzE0QSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjZEOEFGMTgxODY0MzExRTM4Qjc5ODU3NUIyNTMzMTRBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjZEOEFGMTgyODY0MzExRTM4Qjc5ODU3NUIyNTMzMTRBIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8++haY+QAAD8FJREFUeNrkXXtU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); }
+
+.pv-container.pv-vertical .pv-overlay i.pvicon-overlay {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABXCAYAAACTFMIVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2RDhBRjE4Nzg2NDMxMUUzOEI3OTg1NzVCMjUzMzE0QSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2RDhBRjE4ODg2NDMxMUUzOEI3OTg1NzVCMjUzMzE0QSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjZEOEFGMTg1ODY0MzExRTM4Qjc5ODU3NUIyNTMzMTRBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjZEOEFGMTg2ODY0MzExRTM4Qjc5ODU3NUIyNTMzMTRBIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+FSJ+/AAAC+1JREFUeNrkXQlQ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); }
+
 /* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
 /* ==========================================================================
    HTML5 display definitions
@@ -5401,11 +5479,11 @@ You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
 .blue-btn, .comment-reply-link, #submit {
-  background-color: #65B2CE; }
+  background-color: #002868; }
   .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
-    background-color: #56aac9; }
+    background-color: #002054; }
   .blue-btn:active, .comment-reply-link:active, #submit:active {
-    background-color: #52a8c8; }
+    background-color: #001e4e; }
 
 /******************************************************************
 Site Name:
@@ -5450,7 +5528,7 @@ textarea,
   padding: 0 12px;
   margin-bottom: 14px;
   font-size: 1em;
-  color: #5c6b80;
+  color: #fff;
   border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
@@ -5719,23 +5797,21 @@ body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #5c6b80;
-  background-color: #fff;
+  color: #fff;
+  background-color: #3f3f3f;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 .embedded_video {
-  padding-top: 1%;
+  padding-top: 1em;
   width: 100vw;
-  height: 85vh; }
+  height: 92vh; }
 
 .bgvideo {
   position: fixed;
   left: 0;
   top: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
+  width: 100vw;
   height: auto;
   z-index: -100;
   visibility: visible; }
@@ -5744,6 +5820,37 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%; }
+
+.cycle {
+  background-image: url(http://calle8.com:8888/wp-content/uploads/2015/05/PanoramicFullColor.jpg);
+  height: 95vh;
+  cursor: move; }
+
+.tech-360 {
+  display: flex;
+  flex-direction: column; }
+  .tech-360 h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold; }
+  .tech-360 h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: .5rem;
+    margin-top: 2em; }
+  .tech-360 p {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    text-indent: 1rem;
+    line-height: 1.5rem;
+    margin-top: .2rem; }
+
+.camera-360 {
+  width: 80vw;
+  height: auto;
+  align-content: center;
+  align-items: center;
+  align-self: center; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -5794,52 +5901,87 @@ LAYOUT & GRID STYLES
 /*********************
 LINK STYLES
 *********************/
-a, a:visited {
-  color: #65B2CE;
+a,
+a:visited {
+  color: #002868;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
-  a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #42a1c3; }
-  a:link, a:visited:link {
-    /*
-    this highlights links on iPhones/iPads.
-    so it basically works like the :hover selector
-    for mobile devices.
-    */
+  a:hover, a:focus,
+  a:visited:hover,
+  a:visited:focus {
+    color: #fff; }
+  a:link,
+  a:visited:link {
+        /*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
   text-rendering: optimizelegibility;
   font-weight: 500;
-  /*
-  if you're going to use webfonts, be sure to check your weights
-  http://css-tricks.com/watch-your-font-weight/
-  */
+    /*
+	if you're going to use webfonts, be sure to check your weights
+	http://css-tricks.com/watch-your-font-weight/
+	*/
   /* removing text decoration from all headline links */ }
-  h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
+  h1 a,
+  .h1 a,
+  h2 a,
+  .h2 a,
+  h3 a,
+  .h3 a,
+  h4 a,
+  .h4 a,
+  h5 a,
+  .h5 a {
     text-decoration: none; }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 2.5em;
   line-height: 1.333em; }
 
-h2, .h2 {
+.hometitle {
+  font-size: 3em;
+  line-height: 1.333em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px .3em 1em #222222;
+  font-weight: bold; }
+
+h2,
+.h2 {
   font-size: 1.75em;
   line-height: 1.4em;
   margin-bottom: 0.375em; }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 1.125em; }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 1.1em;
   font-weight: 700; }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 0.846em;
   line-height: 2.09em;
   text-transform: uppercase;
@@ -5849,12 +5991,18 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 .header {
-  background-color: #fff; }
+  background-color: transparent; }
 
 #logo {
   margin: 0.75em 0; }
   #logo a {
-    color: #65B2CE; }
+    color: #002868; }
+
+.bgvid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%; }
 
 /*********************
 NAVIGATION STYLES
@@ -5869,14 +6017,11 @@ and more scalable.
 .fa-bars-top {
   margin: 10px 15px 0 15px;
   font-size: 1em;
-  color: #323944;
+  color: #fff;
   float: right; }
 
 .fa-bars-top {
   visibility: visible; }
-
-.top-nav {
-  border-top: 1px solid #eaedf2 !important; }
 
 p.caption {
   margin: 0; }
@@ -5884,8 +6029,10 @@ p.caption {
 .nav {
   border-bottom: 0;
   margin: 0;
-  background-color: #fff;
+  background-color: #3f3f3f;
   display: none;
+  font-weight: bold;
+  font-size: 1.4em;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
@@ -5903,13 +6050,13 @@ p.caption {
   display: block;
   color: #999999;
   text-decoration: none;
-  padding: 23px 0.75em 10px 0.75em;
+  padding: 0.4em 0.4em .4em 0.4em;
   /*
-  remember this is for mobile ONLY, so there's no need
-  to even declare hover styles here, you can do it in
-  the style.scss file where it's relevant. We want to
-  keep this file as small as possible!
-  */ }
+    remember this is for mobile ONLY, so there's no need
+    to even declare hover styles here, you can do it in
+    the style.scss file where it's relevant. We want to
+    keep this file as small as possible!
+    */ }
 
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
@@ -5919,9 +6066,6 @@ p.caption {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-#content {
-  margin-top: 1.5em; }
-
 .hentry {
   background-color: #fff;
   border-radius: 3px;
@@ -5960,12 +6104,12 @@ POSTS & CONTENT STYLES
 /* entry content */
 .entry-content {
   padding: 1.5em 1.5em 0;
-  /*
-  image alignment on a screen this size may be
-  a bit difficult. It's set to start aligning
-  and floating images at the next breakpoint,
-  but it's up to you. Feel free to change it up.
-  */ }
+    /*
+			image alignment on a screen this size may be
+			a bit difficult. It's set to start aligning
+			and floating images at the next breakpoint,
+			but it's up to you. Feel free to change it up.
+			*/ }
   .entry-content p {
     margin: 0 0 1.5em; }
   .entry-content table {
@@ -5996,7 +6140,7 @@ POSTS & CONTENT STYLES
   .entry-content blockquote {
     margin: 0 0 1.5em 0.75em;
     padding: 0 0 0 0.75em;
-    border-left: 3px solid #65B2CE;
+    border-left: 3px solid #002868;
     font-style: italic;
     color: #9fa6b4; }
   .entry-content dd {
@@ -6068,7 +6212,8 @@ PAGE NAVI STYLES
     display: inline;
     overflow: hidden;
     border-right: 1px solid #eaedf2; }
-  .pagination a, .pagination span {
+  .pagination a,
+  .pagination span {
     margin: 0;
     text-decoration: none;
     padding: 0;
@@ -6078,16 +6223,18 @@ PAGE NAVI STYLES
     padding: 0.75em;
     min-width: 1em;
     display: block;
-    color: #65B2CE; }
-    .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-      background-color: #65B2CE;
+    color: #002868; }
+    .pagination a:hover, .pagination a:focus,
+    .pagination span:hover,
+    .pagination span:focus {
+      background-color: #002868;
       color: #fff; }
   .pagination .current {
     cursor: default;
-    color: #5c6b80; }
+    color: #fff; }
     .pagination .current:hover, .pagination .current:focus {
       background-color: #fff;
-      color: #5c6b80; }
+      color: #fff; }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
@@ -6198,7 +6345,7 @@ COMMENT FORM STYLES
   font-style: italic;
   margin: 0; }
   .logged-in-as a {
-    color: #5c6b80; }
+    color: #fff; }
 
 .comment-form-comment {
   margin: 1.5em 0 0.75em; }
@@ -6250,30 +6397,34 @@ FOOTER STYLES
   color: #f8f9fa; }
 
 /*
-if you checked out the link above:
-http://www.alistapart.com/articles/organizing-mobile/
-you'll want to style the footer nav
-a bit more in-depth. Remember to keep
-it simple because you'll have to
-override these styles for the desktop
-view.
-*/
+	if you checked out the link above:
+	http://www.alistapart.com/articles/organizing-mobile/
+	you'll want to style the footer nav
+	a bit more in-depth. Remember to keep
+	it simple because you'll have to
+	override these styles for the desktop
+	view.
+	*/
 .hc_footer li {
   margin: auto; }
-.hc_footer a, .hc_footer a:visited {
+.hc_footer a,
+.hc_footer a:visited {
   color: #fff;
   text-decoration: none;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
-  .hc_footer a:hover, .hc_footer a:focus, .hc_footer a:visited:hover, .hc_footer a:visited:focus {
-    color: #42a1c3; }
-  .hc_footer a:link, .hc_footer a:visited:link {
-    /*
-    this highlights links on iPhones/iPads.
-    so it basically works like the :hover selector
-    for mobile devices.
-    */
+  .hc_footer a:hover, .hc_footer a:focus,
+  .hc_footer a:visited:hover,
+  .hc_footer a:visited:focus {
+    color: #fff; }
+  .hc_footer a:link,
+  .hc_footer a:visited:link {
+            /*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
 
 /* end .footer-links */
@@ -6326,7 +6477,7 @@ tweeners.
           has the possibility of being a mobile device.
           */ }
           .menu ul li a:hover, .menu ul li a:focus {
-            color: #42a1c3; }
+            color: #fff; }
 
   /* end .menu */
   /*********************
@@ -6384,6 +6535,25 @@ you can add resource intensive styles.
   /*********************
   GENERAL STYLES
   *********************/
+  .tech-360 {
+    flex-direction: row;
+    align-items: flex-start; }
+
+  .camera-360 {
+    width: 50vw;
+    height: auto; }
+
+  .cast-exp {
+    width: 50vw;
+    height: 90.5vh;
+    overflow-y: auto;
+    padding-left: 1em; }
+    .cast-exp .pepe-360 {
+      margin-top: -2rem; }
+
+  .tech-360h1 {
+    text-align: center; }
+
   /*********************
   LAYOUT & GRID STYLES
   *********************/
@@ -6401,12 +6571,9 @@ you can add resource intensive styles.
 
   .nav {
     position: fixed;
-    top: 3vh;
     z-index: 9;
     width: 100%;
     align-items: flex-end;
-    box-shadow: 0px 0.2em 1em #3D4A4F;
-    background: #fff;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
@@ -6427,9 +6594,7 @@ you can add resource intensive styles.
         has the possibility of being a mobile device.
         */ }
         .nav li a:hover, .nav li a:focus {
-          color: #65B2CE; }
-        .nav li a:active {
-          color: #65B2CE; }
+          color: #fff; }
       .nav li ul.sub-menu,
       .nav li ul.children {
         margin-top: 0;
@@ -6466,7 +6631,7 @@ you can add resource intensive styles.
     .nav li.current-menu-item a,
     .nav li.current_page_item a,
     .nav li.current_page_ancestor a {
-      color: #65B2CE;
+      color: #3583ff;
       font-weight: bold; }
 
   /* end .nav */

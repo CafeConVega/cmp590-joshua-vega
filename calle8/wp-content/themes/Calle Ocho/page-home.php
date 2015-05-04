@@ -13,18 +13,24 @@
 */
 ?>
 
-<?php get_header(); ?>
-            
-                   <div class="bgvid-container" width="100%" height="100%">
-                    <video class="bgvideo" loop="" autoplay="" width="100px" height="100px">
-              <source src="http://calle8.com:8888/wp-content/uploads/2015/05/Blurry-Highway-SD.mp4" type="video/mp4">
+    <?php get_header(); ?>
+<div class="bgvid-container" width="100%" height="100%">
+    
+                    <video class="bgvideo" loop="" autoplay="" width="1920" height="1080">
+              <source src="http://joshuavega.name/calle8video.mp4">
               Your browser does not support the video tag.
                     </video>
 
-			<h1>Test</h1>
-			<img src="http://calle8.com:8888/wp-content/uploads/2015/05/U_logo.png" class="hvr-rotate" id="u" width="49px" height="30px" alt="The U">
-			
-			</div>
+<!--
+
+    <iframe class="bgvideo" width="100vw" height="100vh" src="https://www.youtube.com/embed/_gVv6WOHSvg?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1;autohide=1" frameborder="0" allowfullscreen></iframe>
+-->
+
+    <img src="http://calle8.com:8888/wp-content/uploads/2015/05/CalleOchoLogoWhite.png" class="hvr-rotate calle8logo" width="27%" height="auto" alt="calle8logo">
+
+    <h1 class="hometitle">A 360&deg; Film Experience</h1>
+
+</div>
 <footer class="bgvid-footer">
     <?php get_footer(); ?>
 </footer>

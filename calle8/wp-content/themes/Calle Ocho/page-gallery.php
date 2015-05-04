@@ -24,18 +24,6 @@
 
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-            <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-
-
-            
-                <section class="entry-content cf" itemprop="articleBody">
-
-                    <?php 
-										wp_link_pages( array(
-											'before '      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bonestheme' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>',
-											'link_after'  => '</span>', ) ); ?>
-    </section>
-    </article>
 
     <?php endwhile; else : ?>
 

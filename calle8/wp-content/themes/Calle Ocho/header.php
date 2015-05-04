@@ -5,6 +5,8 @@
 <!--[if (IE 8)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
 
+	
+	
 	<head>
 		<meta charset="utf-8">
 
@@ -45,8 +47,13 @@
 		<div id="container">
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+<!--
+<a href="http://miami.edu/" target="_blank"><
+img src="http://calle8.com:8888/wp-content/uploads/2015/05/CalleOchoLogoBlack.png" class="hvr-rotate" width="5%" height="auto" alt="calle8logo">
+</a>
+-->
 
-				<div id="inner-header" >
+<div id="inner-header">
 
 <!--
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
