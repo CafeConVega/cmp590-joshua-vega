@@ -21,7 +21,6 @@
 						<li><a href="http://miami.edu/" target="_blank"><img src="http://calle8.com:8888/wp-content/uploads/2015/05/U_logo.png" class="hvr-rotate" id="u" width="49px" height="30px" alt="The U"></a></li>
 						<li><a href="http://com.miami.edu/" class="hvr-rotate" target="_blank">UM School of Communication</a></li>
                         <li><a href="http://com.miami.edu/cinema-interactive-media" class="hvr-rotate" target="_blank">UM                            Cinema &amp; Interactive Media</a></li>
-                        <li><a href="http://interactive.miami.edu" class="hvr-rotate" target="_blank">UM                            Interactive Media</a></li>
 						</ul>
 					</nav>
 
