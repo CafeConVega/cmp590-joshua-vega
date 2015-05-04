@@ -99,7 +99,7 @@ img src="http://calle8.com:8888/wp-content/uploads/2015/05/CalleOchoLogoBlack.pn
 						)); ?>
 
 					</nav>
-    <i class="fa fa-bars fa-bars-top">Menu</i>
+    <i class="fa fa-bars fa-bars-top"> <img src="http://calle8.com:8888/wp-content/uploads/2015/05/CalleOchoLogoWhite.png" class="hvr-rotate" width="15%" height="auto" alt="calle8logo"></i>
 
 				</div>
 

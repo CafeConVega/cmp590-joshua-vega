@@ -1,7 +1,3 @@
-.fa-bars-top {
-    visibility: hidden; }
-
-
 /******************************************************************
 Site Name:
 Author:
@@ -25,6 +21,22 @@ body {
 
 }
 
+.bgvideo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    z-index: -100;
+    visibility: visible;
+}
+
+.bgvid-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 .tech-360 {
 flex-direction: row;
 align-items: flex-start;
@@ -46,10 +58,24 @@ padding-left: 1em;
 }
 
 .tech-360h1 {
- text-align: center;   
+ text-align: center;
+margin-top: 4rem;
 }
 
-
+.bios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &.bio-pic {
+        height: 30%;
+        width: auto;
+    }
+    p {
+        margin-left: 20%;
+        margin-right: 20%;
+        text-indent: 1rem;
+    }
+}
 
 /*********************
 LAYOUT & GRID STYLES
@@ -69,9 +95,26 @@ HEADER STYLES
 
 	#logo {}
 
+.bgvid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.calle8logo {
+    margin-top: 4rem;
+    width: 20vw;
+    height: auto;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
+.fa-bars-top {
+   display: none;
+}
+
 .top-nav {display: block;}
 .nav {
     position: fixed;
@@ -83,7 +126,7 @@ NAVIGATION STYLES
 		margin-top:0;
 	}
 	li {
-		float: right;
+		float: left;
 		position: relative;
 
 		a {

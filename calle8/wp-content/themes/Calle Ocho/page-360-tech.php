@@ -68,14 +68,16 @@
     <p>I really had fun shooting this film with 360 technology. The inability to cut scenes really added a different approach to everything. Additionally, the fact that each individual actor was being filmed at every second is interesting from the viewpoint of the actor and the audience. It had its extra challenges, but it reminded me of theatre and I really enjoyed it as it was my first experience with the technology. My advice to any actors working with this technology in the future is to treat it as if you are on stage and have fun with it.</p>
 </div>
 <div class="ticketguy-360">
-    <h2>Raul Walder - <wbr>Ticket Guy: </h2>
+    <h2>Raul Walder - <wbr>Ticket Guy</h2>
     <p>I personally had a great experience shooting this project with the 360 technology. I believe it's a new concept that requires specificity, but also allows for flexibility in your craft. Being a theatre trained actor, I loved how similar it was to the work that I'm used to for the stage, including rehearsing a lot prior to shooting, as well as being 100% present as your character in every take, at all times.</p>
 </div>
 <div class="moesha-360">
     <h2>Sabrina Mayfield - <wbr>The Nurse</h2>
     <p>Filming on this project using the 360 technology as an actor was very exciting. I found it to be very similar to stage acting were the actor is always on. So, you better know your lines and be ready to improv if needed. The only advice I have is to have fun.</p>
+</div>
+<div class="metermaid-360">
     <h2>Pilar Uribe - <wbr>Barbara The Meter Maid</h2>
-    <p>Filming on this project using the 360 technology as an actor was very exciting. I found it to be very similar to stage acting were the actor is always on. So, you better know your lines and be ready to improv if needed. The only advice I have is to have fun.</p>
+    <p>It was interesting. The camera looked strange, sort of like a martian with a thousand eyes. Since it records every angle, it's important to be in character and in the present moment when the director yells 'action', regardless of how many lines you have. The camera will immediately pick up if you're not engaged in the scene.</p>
 </div>
 </div>
 </section>

@@ -25,13 +25,13 @@ body {
 }
 
 .embedded_video {
-    padding-top: 1em;
+    padding-top: 3em;
     width: 100vw;
-    height: 92vh;
+    height: 98vh;
 }
 
 .bgvideo {
-    position: fixed;
+    position: relative;
     left: 0;
     top: 0;
     width: 100vw;
@@ -41,7 +41,7 @@ body {
 }
 
 .bgvid-footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -50,6 +50,10 @@ body {
     background-image: url(http://calle8.com:8888/wp-content/uploads/2015/05/PanoramicFullColor.jpg);
     height: 95vh;
     cursor: move;
+}
+
+tech-360h1 {
+ margin-top: 3rem;   
 }
 
 .tech-360 {
@@ -79,8 +83,28 @@ body {
     width: 80vw;
     height: auto;
     align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bios-sect {
+ margin-top: 3rem;   
+}
+
+.bios {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    align-self: center;
+    &.bio-pic {
+        height: 30%;
+        width: auto;
+    }
+    p {
+        margin-left: 5%;
+        margin-right: 5%;
+        text-indent: 1rem;
+    }
 }
 /********************
 WORDPRESS BODY CLASSES
@@ -260,7 +284,7 @@ h1,
 }
 
 .hometitle {
-    font-size: 3em;
+    font-size: 2em;
     line-height: 1.333em;
     text-align: center;
     color: $white;
@@ -309,14 +333,17 @@ HEADER STYLES
 }
 
 .bgvid-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
     padding-top: 5%;
 }
 
 .calle8logo {
-    //margin-top: 7%;
+    margin-top: 1rem;
+    width: 30%;
+    height: auto;
+display:block;
+  margin-left:auto;
+  margin-right:auto;
 }
 /*********************
 NAVIGATION STYLES
@@ -330,10 +357,10 @@ and more scalable.
 */
 
 .fa-bars-top {
-    margin: 10px 15px 0 15px;
+    margin: 10px 15px 10px 15px;
     font-size: 1em;
     color: $white;
-    float: right;
+    float: left;
 }
 
 .fa-bars-top {
@@ -937,6 +964,8 @@ FOOTER STYLES
     clear: both;
     background-color: $black;
     color: $light-gray;
+    display: flex;
+    flex-direction: row;
 }
 /*
 	if you checked out the link above:

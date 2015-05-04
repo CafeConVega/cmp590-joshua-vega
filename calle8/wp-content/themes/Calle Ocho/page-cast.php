@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: 360 Tech
+ Template Name: Cast
  *
  * This is your custom page template. You can create as many of these as you need.
  * Simply name is "page-whatever.php" and in add the "Template Name" title at the
@@ -52,32 +52,34 @@
 </div>
 
 </div>
-<h1 class="tech-360h1">The Cast's Experience Filming in 360&deg;</h1>
-<section class="tech-360">
-<div>
-    <img src="http://calle8.com:8888/wp-content/uploads/2015/05/360Camera.jpg" width="50vw" height="auto" alt="360-camera" class="camera-360" />
-</div>
-    <div class="cast-exp">
-    <div class="pepe-360">
-    <h2>Mario Nalini - <wbr>Pepe “The Scammer”</h2>
-    <p>This was my first experience with 360 technology. It's very much like STAGE where you are "on" from begining to end, everything is captured so even if you are in the background you need to stay in character.</p>
-    <p>My advice to actors and filmmakers thinking about working with 360&deg; technology is GO FOR IT! It's the future and who's to say that one day movie theaters will have 360&deg; screens where the viewer will dictate what they want to see. I dug it!! Great cast, great crew, great director!! I had a ball bringing PEPE to life. </p>
-</div>
-<div class="bradley-360">
-    <h2>Richard Capalbo - <wbr>Bradley, The Lawyer</h2>
-    <p>I really had fun shooting this film with 360 technology. The inability to cut scenes really added a different approach to everything. Additionally, the fact that each individual actor was being filmed at every second is interesting from the viewpoint of the actor and the audience. It had its extra challenges, but it reminded me of theatre and I really enjoyed it as it was my first experience with the technology. My advice to any actors working with this technology in the future is to treat it as if you are on stage and have fun with it.</p>
-</div>
-<div class="ticketguy-360">
-    <h2>Raul Walder - <wbr>Ticket Guy: </h2>
-    <p>I personally had a great experience shooting this project with the 360 technology. I believe it's a new concept that requires specificity, but also allows for flexibility in your craft. Being a theatre trained actor, I loved how similar it was to the work that I'm used to for the stage, including rehearsing a lot prior to shooting, as well as being 100% present as your character in every take, at all times.</p>
-</div>
-<div class="moesha-360">
-    <h2>Sabrina Mayfield - <wbr>The Nurse</h2>
-    <p>Filming on this project using the 360 technology as an actor was very exciting. I found it to be very similar to stage acting were the actor is always on. So, you better know your lines and be ready to improv if needed. The only advice I have is to have fun.</p>
-    <h2>Pilar Uribe - <wbr>Barbara The Meter Maid</h2>
-    <p>Filming on this project using the 360 technology as an actor was very exciting. I found it to be very similar to stage acting were the actor is always on. So, you better know your lines and be ready to improv if needed. The only advice I have is to have fun.</p>
-</div>
-</div>
+<!--<h1 class="tech-360h1">The Cast</h1>-->
+<section class="bios-sect">
+    <div class="bios">
+        <h2 class="bio-h2">Mario Nalini - <wbr>Pepe “The Scammer”</h2>
+        <img src="http://calle8.com:8888/wp-content/uploads/2015/05/MarioProfile.jpg" width="450" height="450" alt="mario" class="bio-pic" />
+        <p>Currently living in Lake Worth , Florida and Arcadia California, Mario Nalini is an actor born in Brooklyn, New York who works in TV, film and stage. He also holds a professional culinary degree from the culinary academy of long island in New York. Mario's process begins with the script, then after developing the exterior and interior of the character he throws away the script &amp; lives the role giving him freedom to become lost in the moment. For Mario it is all about the work, it is about helping a story come to life. </p>
+        <p>Known for his chameleon-like way of changing his appearance for the role, he is most often cast in playing a wide variety of characters from all walks of life. </p>
+    </div>
+ <div class="bios">
+        <h2 class="bio-h2">Richard Capalbo - <wbr>Bradley, The Lawyer</h2>
+        <img src="http://calle8.com:8888/wp-content/uploads/2015/05/RichardProfile.jpg" width="450" height="450" alt="mario" class="bio-pic" />
+        <p>From Fort Lauderdale, Florida,  28 years old Richard Capalbo is in his final semester at FAU, pursuing his MBA. He recently opened his music lesson business in South Florida, YouPickMusic. Over the past few years, he has been training at Acting School of South Florida.  Richard is an active commercial, film, and theatrical actor. Over the past year, Richard played Larry in a play called Little Piggies and Bert in It’s a Wonderful Life, at local venues. He also participated in a few short films, such as Ruby, Tomorrow Never Comes and Victim.  Richard really enjoys acting and plans on continually pursuing the craft. He was very excited to take on the role of Brad in Calle Ocho!</p>
+    </div>
+ <div class="bios">
+        <h2 class="bio-h2">Raul Walder - <wbr>Ticket Guy</h2>
+        <img src="http://calle8.com:8888/wp-content/uploads/2015/05/RaulProfile.jpg" width="450" height="450" alt="mario" class="bio-pic" />
+        <p>Raul Walder is a recent graduate from the University of Miami Theatre Department, holding a BA in Theatre Arts and Advertising. He's originally from Caracas, Venezuela. His previous stage shows include the world debut of "Carmen, a new afro-cuban musical" (Ensemble), directed by Tony Award winner Moises Kaufman and Grammy Award winner Arturo O'Farrill, "Chaplin, el musical" (Charlie Chaplin) and "Rescatando La Navidad" (Lauro). His screen work includes the TV series "Tukiti, creci de una!" (Bernardo), the film "Sr. Presidente" (Prisoner), as well as being the image for several international brands, such as Ford, Sony, ESPN, BlackBerry, among others.</p>
+    </div>
+<div class="bios">
+        <h2 class="bio-h2">Sabrina Mayfield - <wbr>The Nurse</h2>
+        <img src="http://calle8.com:8888/wp-content/uploads/2015/05/SabrinaProfile.jpg" width="450" height="450" alt="mario" class="bio-pic" />
+        <p>Sabrina is a stage and film actress seen most recently on CW networks season 5 of Vampire Dairies and Michael Bay's film Pain and Gain. Former student of Dillard HS of performing arts and The Lee Strasberg Institute.</p>
+    </div>
+<div class="bios">
+        <h2 class="bio-h2">Pilar Uribe - <wbr>Barbara The Meter Maid</h2>
+        <img src="http://calle8.com:8888/wp-content/uploads/2015/05/PilarProfile.jpg" width="450" height="450" alt="mario" class="bio-pic" />
+        <p>Born and bred in NYC, Pilar went on vacation for 3 weeks to Colombia, South America, her parents' country of origin. She ended up living in Bogota for 9 years where she worked in television, film, theatre, and even had a band that produced her own music. In telenovelas she has played a variety of 'bad' girls, including a happy-go-lucky plastic surgery fan on ‘Yo Soy Betty La Fea’ which years later, metamorphosed into ‘Ugly Betty’ in the United States. Pilar currently resides in Miami acting in commercials, doing voiceovers and narrating audiobooks.</p>
+    </div>
 </section>
 
 
