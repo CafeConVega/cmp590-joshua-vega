@@ -38,8 +38,9 @@ body {
 }
 
 .tech-360 {
-flex-direction: row;
-align-items: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    -webkit-flex-direction: row;
 }
 
 .camera-360 {
@@ -64,8 +65,11 @@ margin-top: 4rem;
 
 .bios {
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     align-items: center;
+  
     &.bio-pic {
         height: 30%;
         width: auto;
@@ -97,7 +101,9 @@ HEADER STYLES
 
 .bgvid-container {
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     align-items: center;
     padding-top: 5%;
 }

@@ -5834,7 +5834,9 @@ tech-360h1 {
 
 .tech-360 {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
   .tech-360 h1 {
     font-size: 1.3rem;
     text-align: center;
@@ -5865,6 +5867,8 @@ tech-360h1 {
 .bios {
   display: flex;
   flex-direction: column;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
   align-items: center; }
   .bios.bio-pic {
     height: 30%;
@@ -6427,7 +6431,9 @@ FOOTER STYLES
   background-color: #fff;
   color: #f8f9fa;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  display: -webkit-flex;
+  -webkit-flex-direction: row; }
 
 /*
 	if you checked out the link above:
@@ -6581,7 +6587,8 @@ you can add resource intensive styles.
 
   .tech-360 {
     flex-direction: row;
-    align-items: flex-start; }
+    align-items: flex-start;
+    -webkit-flex-direction: row; }
 
   .camera-360 {
     width: 50vw;
@@ -6601,7 +6608,9 @@ you can add resource intensive styles.
 
   .bios {
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     align-items: center; }
     .bios.bio-pic {
       height: 30%;
@@ -6622,7 +6631,9 @@ you can add resource intensive styles.
   *********************/
   .bgvid-container {
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     align-items: center;
     padding-top: 5%; }
 
