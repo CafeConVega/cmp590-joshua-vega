@@ -30,7 +30,7 @@ src="http://360.io/5wu2WT">
 -->
 
 <div class="panorama">
- <img src="http://calle8.com:8888/wp-content/uploads/2015/05/PanoramicCompiled_Descriptions.jpg" usemap="#charmap">
+ <img src="http://calle8.com:8888/wp-content/uploads/2015/05/PanoramicCompiled_all.jpg" usemap="#charmap">
 </div>
 <h1 class="castheader">Meet the Cast</h1>
 <section class="Collage effect-parent effect-duration-5">
