@@ -25,9 +25,9 @@ body {
 }
 
 .embedded_video {
-    padding-top: 3em;
+    padding-top: 0em;
     width: 100vw;
-    height: 98vh;
+    height: 77vh;
 }
 
 .bgvideo {
@@ -53,7 +53,7 @@ body {
 }
 
 tech-360h1 {
- margin-top: 3rem;   
+ margin-top: 3rem; 
 }
 
 .tech-360 {
@@ -75,7 +75,6 @@ tech-360h1 {
     p {
         padding-right: .5rem;
         padding-left: .5rem;
-        text-indent: 1rem;
         line-height: 1.5rem;
         margin-top: .2rem;
     }
@@ -110,6 +109,11 @@ tech-360h1 {
         text-indent: 1rem;
     }
 }
+
+.Image_Wrapper .cap {
+ height: inherit;   
+}
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -285,6 +289,7 @@ h1,
 .h1 {
     font-size: 2.5em;
     line-height: 1.333em;
+    margin: 0em;
 }
 
 .hometitle {
@@ -300,6 +305,7 @@ h2,
     font-size: 1.75em;
     line-height: 1.4em;
     margin-bottom: 0.375em;
+    margin: 0em;
 }
 
 h3,
@@ -319,6 +325,12 @@ h5,
     line-height: 2.09em;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.movie-title {
+     padding-top: 2em;
+    padding-bottom: .5em;
+    text-align: center;
 }
 /*********************
 HEADER STYLES
@@ -344,13 +356,15 @@ HEADER STYLES
     margin-top: 1rem;
     width: 30%;
     height: auto;
-display:none;
-  margin-left:auto;
-  margin-right:auto;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 .castheader {
  text-align: center;
 margin-bottom: 0;
+padding-top: 1em;
+    
 }
 
 /*********************
@@ -420,7 +434,11 @@ p.caption {
 
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
+    font-size: .8em;
+    color: $text-color;
     padding-left: 30px;
+    color: #999999;
+    background: $white;
 }
 /* end .nav */
 /*********************

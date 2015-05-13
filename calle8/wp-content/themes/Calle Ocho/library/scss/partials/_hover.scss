@@ -296,28 +296,47 @@
 }
 
 /* Rotate */
-    
-.menu-item-object-page  {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
+
+.menu-item-object-page {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    -ms-backface-visibility: visible;
+    -o-backface-visibility: visible;
+    backface-visibility: visible;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: transform;
+    -moz-transition-property: transform;
+    -ms-transition-property: transform;
+    -o-transition-property: transform;
+    transition-property: transform;
 }
 
-.menu-item-object-page:hover, .menu-item-object-page:focus, .menu-item-object-page:active {
-   -webkit-transform-style: preserve-3d;
+.menu-item-object-page:hover,
+.menu-item-object-page:focus,
+.menu-item-object-page:active {
+    -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transform: rotate(-360deg);
-  transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
 }
 
 .hvr-rotate {
@@ -363,6 +382,7 @@
     -webkit-transform: rotate(-360deg);
   transform: rotate(-360deg);
 }
+
 
 /* Grow Rotate */
 .hvr-grow-rotate {

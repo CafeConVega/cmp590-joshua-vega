@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Watch Movie v2
+ Template Name: Movie Chapter Three
  *
  * This is your custom page template. You can create as many of these as you need.
  * Simply name is "page-whatever.php" and in add the "Template Name" title at the
@@ -12,11 +12,11 @@
  * For more info: http://codex.wordpress.org/Page_Templates
 */
 ?>
+<?php get_header(); ?>
 
-    <?php get_header(); ?>
 
-<iframe class="embedded_video" width='853' height='534' src='http://www.vrideo.com/embed/WtTfLvo' scrolling='no' frameborder='0' allowfullscreen='1'></iframe>
-        
+<h2 class="movie-title">Calle Ocho: Part 3</h2>
 
+<iframe width='1280' height='800' src='http://www.vrideo.com/embed/IGiQxuC' scrolling='no' frameborder='0' allowfullscreen='1'></iframe>
 
 <?php get_footer(); ?>

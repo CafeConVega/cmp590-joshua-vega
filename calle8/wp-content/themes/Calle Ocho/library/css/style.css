@@ -59,17 +59,16 @@ No one likes a mess.
   border-radius: 3px; }
 
 .Caption {
-  font-size: .8rem;
+  font-size: 1em;
   font-weight: normal;
   font-family: arial;
-  overflow-y: auto; }
-  .Caption p {
-    text-indent: 1em; }
+  text-shadow: 0em .1em 0em #222222;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.6); }
 
 .Caption_Content {
-  /* padding:10px; */
   color: #FFF;
-  padding: 20px; }
+  padding: 1em; }
 
 /*
 
@@ -511,21 +510,40 @@ A library of transitions for revealing the loaded images
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
   -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  -o-backface-visibility: visible;
   backface-visibility: visible;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
   -webkit-transition-property: transform;
+  -moz-transition-property: transform;
+  -ms-transition-property: transform;
+  -o-transition-property: transform;
   transition-property: transform; }
 
-.menu-item-object-page:hover, .menu-item-object-page:focus, .menu-item-object-page:active {
+.menu-item-object-page:hover,
+.menu-item-object-page:focus,
+.menu-item-object-page:active {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transform: rotate(-360deg);
+  -moz-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  -o-transform: rotate(-360deg);
   transform: rotate(-360deg); }
 
 .hvr-rotate {
@@ -5806,9 +5824,9 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 .embedded_video {
-  padding-top: 3em;
+  padding-top: 0em;
   width: 100vw;
-  height: 98vh; }
+  height: 77vh; }
 
 .bgvideo {
   position: relative;
@@ -5849,7 +5867,6 @@ tech-360h1 {
   .tech-360 p {
     padding-right: .5rem;
     padding-left: .5rem;
-    text-indent: 1rem;
     line-height: 1.5rem;
     margin-top: .2rem; }
 
@@ -5877,6 +5894,9 @@ tech-360h1 {
     margin-left: 5%;
     margin-right: 5%;
     text-indent: 1rem; }
+
+.Image_Wrapper .cap {
+  height: inherit; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -5981,7 +6001,8 @@ h5,
 h1,
 .h1 {
   font-size: 2.5em;
-  line-height: 1.333em; }
+  line-height: 1.333em;
+  margin: 0em; }
 
 .hometitle {
   font-size: 2em;
@@ -5994,7 +6015,8 @@ h2,
 .h2 {
   font-size: 1.75em;
   line-height: 1.4em;
-  margin-bottom: 0.375em; }
+  margin-bottom: 0.375em;
+  margin: 0em; }
 
 h3,
 .h3 {
@@ -6011,6 +6033,11 @@ h5,
   line-height: 2.09em;
   text-transform: uppercase;
   letter-spacing: 2px; }
+
+.movie-title {
+  padding-top: 2em;
+  padding-bottom: .5em;
+  text-align: center; }
 
 /*********************
 HEADER STYLES
@@ -6037,7 +6064,8 @@ HEADER STYLES
 
 .castheader {
   text-align: center;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-top: 1em; }
 
 /*********************
 NAVIGATION STYLES
@@ -6095,7 +6123,11 @@ p.caption {
 
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
-  padding-left: 30px; }
+  font-size: .8em;
+  color: #3f3f3f;
+  padding-left: 30px;
+  color: #999999;
+  background: #fff; }
 
 /* end .nav */
 /*********************
@@ -6599,8 +6631,6 @@ you can add resource intensive styles.
     height: 90.5vh;
     overflow-y: auto;
     padding-left: 1em; }
-    .cast-exp .pepe-360 {
-      margin-top: -2rem; }
 
   .tech-360h1 {
     text-align: center;
@@ -6642,7 +6672,7 @@ you can add resource intensive styles.
     line-height: 1.333em;
     text-align: center;
     color: #fff;
-    text-shadow: 0px .3em 1em #222222;
+    text-shadow: 0em .075em 0em #222222;
     font-weight: bold; }
 
   .calle8logo {

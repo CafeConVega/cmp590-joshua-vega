@@ -16,10 +16,10 @@
     <?php get_header(); ?>
 <div class="bgvid-container" width="100%" height="100%">
     
-                    <video class="bgvideo" loop="" autoplay="" width="1920" height="1080">
-              <source src="http://calle8.com:8888/wp-content/uploads/2015/05/calle8video.mp4">
-              Your browser does not support the video tag.
-                    </video>
+               <video class="bgvideo" loop="" autoplay="" width="1920" height="1080">
+    <source src="http://calle8.com:8888/wp-content/uploads/2015/05/calle8video.mp4">
+        Your browser does not support the video tag.
+</video>
 
 <!--
 

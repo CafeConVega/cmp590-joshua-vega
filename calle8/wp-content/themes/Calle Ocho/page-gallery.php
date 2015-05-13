@@ -12,9 +12,18 @@
  * For more info: http://codex.wordpress.org/Page_Templates
 */
 ?>
-
+<head>
 
 <?php get_header(); ?>
+
+<style>
+    
+.Caption{
+    height: auto;
+}
+</style>
+
+</head>
 
 <div id="content">
 

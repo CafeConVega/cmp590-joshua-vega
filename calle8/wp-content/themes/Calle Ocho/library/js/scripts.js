@@ -770,7 +770,7 @@ jQuery(document).ready(function($) {
         // colour for the caption background
         'background'      : "black",
         // opacity for the caption background
-        'opacity'         : "0.5",
+        'opacity'         : "0",
         // speed of the reveal / hide animation
         'speed'           : 300,
         // css class for the caption wrapper

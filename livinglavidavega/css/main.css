@@ -21,6 +21,10 @@ font-family: 'Oswald', sans-serif;
 /* ==========================================================================
    Custom styles
    ========================================================================== */
+ body{
+  -webkit-font-smoothing: antialiased;
+ }
+
 /*Home Page Styles*/
 
 nav {
@@ -210,12 +214,13 @@ nav a:active {
 }
 /*Wedding Day Page Styles*/
 
-#weddingdayid {
+.weddingday, #weddingdayid {
     background: #D4D4D4;
-    display: flex;
-    display: -webkit-flex;
-    align-items: flex-start;
+    display: block;
+    align-items: center;
     margin-top: 1em;
+    align-content: center;
+    text-align: center;
 }
 
 #weddingdayid h1 {
@@ -238,18 +243,16 @@ nav a:active {
 }
 
 #weddingdayid ul {
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    flex-wrap: -webkit-wrap;
     font-family: 'Cambo', serif;
     font-size: 1.4em;
     color: #FFFFFF;
     list-style-type: none;
-    margin-left: 1em;
+    line-height: 1em;
     text-align: center;
-    justify-content: center;
-    line-height: 1.7em;
+    -webkit-text-align: center;
+    -moz-text-align: center;
+    -ms-text-align: center;
+    -o-text-align: center;
 }
 
 #weddingdayid li span {
@@ -258,7 +261,8 @@ nav a:active {
     color: #EF4036;
 }
 
-#weddingdayid li {
+#weddingdayid .dayof-row1 li,
+#weddingdayid .dayof-row2 li{
     margin-right: 3em;
     color: #333333;
     display: inline;
@@ -279,8 +283,9 @@ nav a:active {
     text-decoration: none;
 }
 
+
 .link {
-    border-bottom: dotted #FFFFFF;
+    border-bottom: thin dotted #FFFFFF;
 }
 /*Adding background for the slides
 	* --------------------------------------- */
@@ -416,12 +421,18 @@ nav a:active {
     background: url('../assets/graphics/floral_bottom.png') no-repeat;
     background-size: contain;
     background-position: bottom;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
 }
 
 #reception {
     background: url('../assets/graphics/floral_bottom.png') no-repeat;
     background-size: contain;
     background-position: bottom;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
 }
 
 #church_map {
@@ -447,6 +458,23 @@ nav a:active {
     border-color: white;
     margin-bottom: 6em;
 }
+
+fp-tableCell {
+    width: 100vw;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  border: 2px solid #EF4036;
+  background: transparent;
+    display: inline;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+    background: #333;
+    display: inline;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
