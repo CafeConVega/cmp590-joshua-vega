@@ -17,6 +17,6 @@
 
 <h2 class="movie-title">Calle Ocho: Part 2</h2>
 
-<iframe width='1280' height='800' src='http://www.vrideo.com/embed/pj8xNF6' scrolling='no' frameborder='0' allowfullscreen='1'></iframe>
+<iframe width='1280' height='800' class="embedded_video" src='http://www.vrideo.com/embed/pj8xNF6' scrolling='no' frameborder='0' allowfullscreen='1'></iframe>
 
 <?php get_footer(); ?>
